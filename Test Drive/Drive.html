@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./drive.css" type="text/css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <title>Test Drive</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center"> TEST DRIVE AND QUOTE </h1>
+            <h3 class="text-center"> YOUR PERSONAL DETAILS</h3>
+        </header>
+    
+          <form id="Test drive and Quote" class="Test drive">
+
+            <!-- input texts -->
+            <div class="form-group">
+              <input type="text" placeholder="First Name" id ="first-name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="label-name" for="name"></label>
+                <input type="text" placeholder ="Last Name" id="name" class="form-control" required> 
+            </div>
+            
+            <div class="form-group">
+                <label id="label-email" for="email"></label>
+                <input type ="text" placeholder ="name@example.com" id="email" class="form-control" required>
+            </div>
+            
+            <!-- end of input texts -->
+
+                <p>WHICH VEHICLE DO YOU CURRENTLY OWN</p>
+                
+            <div class="form-group">
+                <label id="label-vehicle" for= "vehicle">Bicycle / Super bike</label>
+                <input type="checkbox" id="vehicle" class="input-checkbox">
+            </div>
+                  
+            <div class="form-group">
+                <label id="label-car" for="car">Car</label>
+                <input type="checkbox" id="car" class="input-checkbox">
+            </div> 
+            
+            <div class="form-group">
+                <label for="none">None</label>
+                <input id="none" type="checkbox" class="input-checkbox">
+            </div>
+
+               <p>If car please enter the make and model(Optional)</p>
+
+            <div class="form-group">
+                <select 
+                id="dropdown"
+                name="make"
+                class="form-control" required>
+                <option disabled selected value>Select your current make</option>
+                <option value="range">Range Rover</option>
+                <option value="audi">Audi</option>
+                <option value="jeep">Jeep</option>
+                <option value="merc">Mercedes Benz</option>
+                <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select 
+                id="dropdown"
+                name="make"
+                class="form-control" required>
+                <option disabled selected value>Select your current model</option>
+                <option value="range">S Klasse</option>
+                <option value="audi">E Klasse</option>
+                <option value="jeep">C Klasse</option>
+                <option value="merc">Sport</option>
+                <option value="rs">RS</option>
+                <option value="others">Others</option>
+                </select>
+            </div>
+                
+            <p>ADDITIONAL INFORMATION ABOUT YOUR REQUEST</p>
+
+            <div class="form-group">
+                <label for="comments"></label>
+                <textarea
+                id="comments"
+                name="comment"
+                placeholder="additional info"
+                class="input-comment"></textarea>
+            </div>
+                
+            <span class="policy"><p>PRIVACY POLICY-CONSENT</p></span>
+            <p> Having read and understood Quattro's privacy policy:</p>
+            <input type="checkbox" checked> I consent to the processing of my personal data for processing and Marketing purposes,<br /> as defined in Section 3 of privacy policy. If you want to partially select the approval on the contract
+                  <a href= "#">Click here</a>
+                <p>*Required Fields</p>
+                <button type="submit" class="btn">Submit</button>
+    </div>
+</body>
+</html>

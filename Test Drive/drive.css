@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+::placeholder {
+    font-family: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    margin: 0;
+    /* background: url(./test-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ), */
+     background-image:  url(./test-bg.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #2596be;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: red;
+}
+
+.text-center {
+    text-align: center;
+    color: #2596be;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+form {
+    background: #1b1b32;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    margin: 5rem 20rem 5rem 20rem;
+    /* opacity: 0.5; */
+}
+
+.form-group {
+    margin: 0 auto 1.0rem auto;
+    padding: 0.25rem;
+}
+  
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.0rem;
+    padding: 0.2rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.0rem;
+    min-width: 1.25rem;
+    margin-block: 3px;
+}
+
+.input-comment {
+    min-height: 140px;
+    width: 100%;
+    padding: 0.65rem;
+    border-radius: 2px;
+    resize: verticle;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2596be;
+    border-radius: 0.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.policy {
+    line-height: 2.5;
+}
+
+
+  
