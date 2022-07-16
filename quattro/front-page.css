@@ -15,6 +15,10 @@ html, body {
     height: 100%;
 }
 
+/* .header {
+    position: fixed;
+} */
+
 ul, li {
     list-style: none;
     color: white;
@@ -109,7 +113,7 @@ a {
         rgba(5, 0, 40, 0.6)
       ),
 
-      url(./image10.jpg);
+      url(./img/image10.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -146,4 +150,9 @@ a {
     padding: 10px;
     color: #f3f3f3;
     margin-top: 65vh;
+    transition: 1s;
+}
+
+.test:hover {
+    color: red;
 }

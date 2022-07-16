@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./front-page.css" type="text/css">
+    <link rel="icon" href="./img/dark-logo_edited.jpg" type="image/x-icon">
     <title>Quattro Front Page</title>
 </head>
 <body>
     <div class="container">
             <div class="dark">
-                <div class="logo"><img src="./dark-logo_edited.jpg" alt="logo"></div>
+                <div class="logo"><img src="./img/dark-logo_edited.jpg" alt="logo"></div>
                 <div class="order-test">
-                    <button class="btn order">Order Now</button>
+                    <button id="orderPage" class="btn order" onclick="orderPage()">Order Now</button>
                 </div>
             </div>
             <div class="main">
-                <nav class="navigation">
-                    <ul>
-                        <li class="item"><a href="#">Home</a></li>
-                        <li class="item"><a href="../search/search-app/src/Search.js">Yard</a></li>
-                        <li class="item"><a href="#">Services</a></li>
-                        <li class="item button"><a href="../Test Drive/Drive.html">Test Drive</a></li>
-                        <!-- <li class="toggle"><span class="bars"></span></li> -->
-                    </ul>
-                </nav>
+                    <nav class="navigation">
+                        <ul>
+                            <li class="item"><a href="./front-page.html">Home</a></li>
+                            <li class="item"><a href="https://unsplash.com/images/things/car">Yard</a></li>
+                            <li class="item"><a href="./contact.html">Contact Us</a></li>
+                            <li class="item button"><a href="./Drive.html">Test Drive</a></li>
+                        </ul>
+                    </nav>
 
-                <button class="btn test">Test Drive</button>
+                <button class="btn test" onclick="drive()">Test Drive</button>
             </div>
     </div>
+    <script>
+        function orderPage() {
+            document.location.href = "orderpage.html";
+        }
+        function drive() {
+            document.location.href = "Drive.html";
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/dark-logo_edited.jpg" type="image/x-icon">
+    <title>Order Page </title>    
+ <style>
+    body{
+        background-color: #f5f5f5;
+    }
+
+   .column{
+      float: left;
+      width:32%;
+      padding: 5px;
+    }
+    .row::after{
+      content: "";
+      clear:both;
+      display:table;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      
+    }
+    .top-center{
+      position: absolute;
+      top: 8px;
+      text-align: center;
+    }
+    .centered {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:rosybrown ;
+      
+    }
+    .button {
+      position: absolute;
+      bottom: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: gainsboro;
+      color: black;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      transition: 1s;
+    }
+
+    .button:hover {
+      background-color:black;
+      color: red;
+    }
+    .img {
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+    }
+    .img{
+        opacity:0.5;
+    }
+    
+
+    img:hover {
+     opacity: 1.0;
+    }
+    
+</style>
+</head> 
+<body>
+       <div class="card-wrapper" id= "card-wrapper">
+        <div class="row">
+         <div class="column">  
+          <div class="card">
+            <div class="container">
+                <img src="./img/car.jpg" class="img" style="width:95%"/>
+                <h2 class="centered">Need a car?<br/> Check out our collection </h2>
+                <button type="button" class="button">Visit our Yard</button>
+            </div>
+          </div> 
+         </div>    
+            
+         <div class="column">
+          <div class="card">
+            <div class="container">
+                <img src="./img/bicycle.jpg" class="img" style="width:95% " />
+                <h2 class="centered">Come cycle with us to<br/> Oblivion </h2>
+                <button type="button" class="button">Visit our Yard</button>
+            </div>
+          </div> 
+         </div>
+
+         <div class="column">
+          <div class="card">
+            <div class="container">
+                <img src="./img/sportbike.jpg" class="img" style="width:105%"/>
+                <h2 class="centered">Speed Bike?<br/> Speed is our only vice</h2>
+                <button type="button" class="button">Visit our Yard</button>
+            </div>
+          </div> 
+         </div> 
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css" type>
+    <link rel="icon" href="./img/dark-logo_edited.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="container">
+      <!-- excluded navbar -->
+      <div id="contact-us">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you! Send us a message.</p>
+      </div>
+      <form class="form" name="contact-form">
+        <div class="form-group">
+            <label for="exampleInputText1">Enter name</label>
+            <input type="name" name="name" class="form-control" id="exampleInputText1" placeholder="e.g, John Doe, Charles Mugabe">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Phone Number</label>
+          <input type="phone" name="phone" class="form-control" id="exampleInputText1" placeholder="+254 122 333 444">
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" for="textAreaExample">Message</label>
+          <textarea class="form-control" name="message" id="textAreaExample1" rows="4" placeholder="Message"></textarea>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Quattro.info</a>
+      </div>
+    </footer>
+
+
+    <!-- form validation -->
+
+    <script src="./contact.js"></script>
+  
+</body>
+</html>

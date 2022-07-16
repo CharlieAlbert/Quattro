@@ -36,11 +36,15 @@ body::before {
         rgba(58, 58, 158, 0.8),
         rgba(136, 136, 206, 0.7)
       ), */
-     background-image:  url(./test-bg.jpg);
+     background-image:  url(./img/test-bg.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 }
+
+/* nav {
+    position: fixed;
+} */
 
 a {
     text-decoration: none;
@@ -53,9 +57,60 @@ a:hover {
     color: red;
 }
 
+nav > ul {
+    text-align: right;
+    font-weight: 400;
+}
+
+nav > ul > li {
+    float: none;
+    display: inline-block;
+}
+
+ul, li {
+    list-style: none;
+    color: white;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #880217;
+    transition: 1s;
+}
+
+nav > ul > li > a:hover {
+    color: black;
+}
+
+#navigation > li {
+    padding: 10px;
+}
+
+nav {
+    margin-top: 2px;
+}
+
+#button a {
+    padding: 7px 15px;
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid #880217;
+    border-radius: 50em;
+    transition: border 1s;
+}
+
+#button a:hover {
+    border: none;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
 .text-center {
     text-align: center;
     color: #2596be;
+    line-height: 2;
 }
 
 label {
@@ -72,7 +127,7 @@ form {
     background: #1b1b32;
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
-    margin: 5rem 20rem 5rem 20rem;
+    margin: 2rem 20rem 5rem 20rem;
     /* opacity: 0.5; */
 }
 
@@ -98,6 +153,10 @@ form {
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input {
+    padding: 50px;
 }
 
 .input-checkbox {
